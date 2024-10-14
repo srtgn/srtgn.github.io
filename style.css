@@ -1,3 +1,4 @@
+/* Base styles for larger screens (desktops) */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -54,3 +55,82 @@ li strong {
     width: 150px;
 }
 
+/* Media Queries for responsiveness */
+/* Tablets and larger screens */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    li strong {
+        width: 120px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+}
+
+/* Smaller tablets and large mobile phones */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    li strong {
+        width: 100px;
+    }
+
+    ul li {
+        font-size: 15px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+    .container {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    li strong {
+        width: 80px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+    
+    ul {
+        padding-left: 10px;
+    }
+}
